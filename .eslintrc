@@ -12,6 +12,7 @@
         "semi": ["error", "never"]
     },
     "globals": {
-        "document": true
+        "document": true,
+        "window": true
     }
 }
