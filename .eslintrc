@@ -13,6 +13,8 @@
     },
     "globals": {
         "document": true,
-        "window": true
+        "window": true,
+        "react": true,
+        "react-dom": true
     }
 }
