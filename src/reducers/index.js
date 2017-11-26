@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux'
+
 import {
   ADD_RECIPE,
   REMOVE_FROM_CALENDAR,
@@ -58,6 +59,7 @@ const initialCalendarState = {
 
 function calendar(state = initialCalendarState, action) {
   const { day, recipe, meal } = action
+
   switch (action.type) {
     case ADD_RECIPE:
       return {
@@ -80,7 +82,7 @@ function calendar(state = initialCalendarState, action) {
   }
 }
 
-export default combineReducers(
+export default combineReducers({
   food,
-  calendar
-)
+  calendar,
+})
